@@ -1,0 +1,16 @@
+{
+  "name": "slug-generator",
+  "version": "1.0.0",
+  "description": "Transform your string into a beautiful slug for your website!",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwind build -i src/styles.css -o public/styles.css --watch",
+    "watch": "watch \"npm run build-css\""
+  },
+  "author": "Pelayo Trives",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5",
+    "watch": "^1.0.2"
+  }
+}
