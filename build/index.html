@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>FixSlug - Fix your slug now 🤯</title>
+</head>
+
+<body>
+
+    <article class="max-w-7xl m-auto px-5 font-poppins">
+        <header class="max-w-7xl w-100 border-b-solid border-b-2 border-purple-600 m-auto mt-5 pb-3">
+            <nav class="flex flex-row justify-between">
+                <div class="first-section">
+                    <a class="font-mono font-semibold tracking-widest uppercase" href="/">FixSlug</a>
+                </div>
+                <div class="second-section flex flex-row gap-5">
+                    <a class="font-normal hover:transition-all hover:font-medium hover:text-purple-600"
+                        href="https://github.com/pelayotrives" target="_blank">More Projects</a>
+                    <a class="font-normal hover:transition-all hover:font-medium hover:text-purple-600"
+                        href="https://pelayotrives.netlify.app/" target="_blank">About Me</a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="my-10">
+            <div class="text-center max-w-4xl m-auto flex flex-col gap-5">
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                    class="text-4xl font-mono text-black">Slug is <span
+                        class="text-purple-600 font-semibold">love</span>. Slug is <span
+                        class="text-purple-600 font-semibold">life</span>.</h1>
+                <p data-aos="fade-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"><span class="font-bold">FixSlug</span> is an online utility that transforms any given sentence into a
+                    clean, SEO-friendly slug.
+                    Simply insert a sentence, and voilà – receive an optimized URL component.</p>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 flex flex-col gap-5 p-5 rounded-lg">
+            <label class="" for="input_text">
+                Your string: (It can be any type of phrase, title ...)
+            </label>
+            <input type="text" id="input_text" class="rounded-md border-solid border-2 border-gray-300 p-2 focus:outline-purple-600" autofocus>
+        </section>
+    </article>
+
+    <footer class="w-screen bg-gray-800 text-white font-poppins absolute bottom-0">
+        <nav class="max-w-7xl m-auto px-5 py-7 flex flex-row justify-between">
+            <p>Copyright © - 2023</p>
+            <div class="flex flex-row gap-3">
+                <a class="font-normal hover:transition-all hover:font-medium hover:text-purple-600"
+                    href="https://www.linkedin.com/in/pelayo-trives-pozuelo/">LinkedIn</a>
+                <a class="font-normal hover:transition-all hover:font-medium hover:text-purple-600"
+                    href="https://github.com/pelayotrives">GitHub</a>
+                <a class="font-normal hover:transition-all hover:font-medium hover:text-purple-600"
+                    href="mailto:pelayotrivespozuelo@gmail.com">Mail</a>
+            </div>
+        </nav>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
