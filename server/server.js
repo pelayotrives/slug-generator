@@ -42,7 +42,7 @@ http
     }
     if (req.url === "assets/favicon.ico") {
       res.writeHead(200, { "Content-Type": "image/x-icon" });
-      fs.createReadStream("./public/favicon.ico").pipe(res);
+      fs.createReadStream("./build/assets/favicon.ico").pipe(res);
       return;
     }
     res.writeHeader(200, { "Content-Type": "text/html" });
