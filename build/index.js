@@ -1,8 +1,7 @@
 /**
- * The `transformString` function takes a string as input and transforms it by removing accents,
- * converting to lowercase, replacing spaces and underscores with hyphens, removing punctuation, and
- * removing any characters that are not letters, numbers, or hyphens.
- * @param input - The `input` parameter is a string that represents the text that needs to be
+ * The `transformString` function takes an input string and transforms it by removing accents,
+ * converting to lowercase, replacing certain characters, and removing any non-alphanumeric characters.
+ * @param input - The input parameter is a string that represents the text that needs to be
  * transformed.
  * @returns The function `transformString` returns a transformed version of the input string.
  */
@@ -14,6 +13,7 @@ const transformString = (input) => {
   let transformedText = stringWithoutAccents
     .toLowerCase()
     .replace(/ñ/g, "n")
+    .replace(/\s*-\s*/g, "-") 
     .replace(/[\s_]+/g, "-")
     .replace(/[.,;:]/g, "")
     .replace(/[^a-zA-Z0-9-]/g, "");
