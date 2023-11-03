@@ -1,4 +1,4 @@
-function transformarString(input) {
+function transformString(input) {
   return input
     .toLowerCase()
     .replace(/ñ/g, "n")
