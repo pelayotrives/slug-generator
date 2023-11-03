@@ -507,8 +507,11 @@ video {
 .h-10 {
   height: 2.5rem;
 }
-.h-11 {
-  height: 2.75rem;
+.h-auto {
+  height: auto;
+}
+.min-h-\[2\.75rem\] {
+  min-height: 2.75rem;
 }
 .w-full {
   width: 100%;
