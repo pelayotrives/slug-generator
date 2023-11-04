@@ -10,10 +10,14 @@ This project, developed by Pelayo Trives, is a simple yet powerful tool that all
 
 ## How to Use
 
-1. **Open the Tool**: Load the web page on any modern browser.
-2. **Input Your String**: Type or paste the string you wish to convert into the input field.
-3. **Generate Slug**: The tool automatically converts your string into a slug as you type.
-4. **Copy and Use**: Simply copy the generated slug and use it in your URLs or any other web-related context.
+**Download project**: You will have to do the following:
+
+`npm i`
+`npm run serve`
+
+1. **Input Your String**: Type or paste the string you wish to convert into the input field.
+2. **Generate Slug**: The tool automatically converts your string into a slug as you type.
+3. **Copy and Use**: Simply copy the generated slug and use it in your URLs or any other web-related context.
 
 ## Technology Stack
 
