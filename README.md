@@ -1,4 +1,4 @@
-# Slugify String Tool
+# FixSlug Tool
 
 This project, developed by Pelayo Trives, is a simple yet powerful tool that allows users to convert regular strings into URL-friendly slugs. This transformation is particularly useful for creating clean and SEO-optimized URLs for web content. Built with HTML, CSS, JavaScript, and TailwindCSS, the tool offers an easy-to-use interface and efficient functionality.
 
@@ -42,4 +42,4 @@ Pelayo Trives is a passionate developer with a focus on web technologies and use
 
 ---
 
-Enjoy using Slugify String Tool for a smoother, cleaner web development experience!
+Enjoy using FixSlug for a smoother, cleaner web development experience!
