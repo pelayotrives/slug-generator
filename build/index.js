@@ -70,18 +70,11 @@ const copyContent = async () => {
   if (text.length >= 1) {
     try {
       await navigator.clipboard.writeText(text);
-      // Toastify({
-      //   text: "Text copied to clipboard!",
-      //   duration: 3000,
-      // }).showToast();
     } catch (err) {
       throw err;
     }
   } else {
-    // Toastify({
-    //   text: "Oopsie! Type something!",
-    //   duration: 3000,
-    // }).showToast();
+    console.log("Error.");
   }
 };
 
