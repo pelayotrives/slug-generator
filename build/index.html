@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-white dark:bg-gray-800">
 
 <!-- Head -->
 
@@ -12,33 +12,35 @@
     <title>FixSlug - Fix your slug now 🤯</title>
 </head>
 
-<body>
+<body class="flex flex-col w-screen justify-between h-screen">
 
-    <!-- Full SPA -->
-    <article class="max-w-7xl m-auto px-5 font-poppins relative">
+    <!-- Header -->
+    <header class="w-100 mt-5 mx-5">
+        <nav class="flex flex-row justify-between max-w-7xl m-auto border-b-solid border-b-2 border-purple-600 pb-3">
+            <div class="first-section">
+                <a class="font-mono font-semibold tracking-widest uppercase text-black dark:text-white" href="/"
+                    rel="noopener noreferrer">FixSlug
+                    💻</a>
+            </div>
+            <div class="second-section flex flex-row gap-5">
+                <a class="font-normal hover:transition-all hover:font-medium hover:text-purple-600 text-black dark:text-white"
+                    href="https://github.com/pelayotrives" rel="noopener noreferrer" target="_blank">More Projects</a>
+                <a class="font-normal hover:transition-all hover:font-medium hover:text-purple-600 text-black dark:text-white"
+                    href="https://pelayotrives.netlify.app/" target="_blank" rel="noopener noreferrer">About Me</a>
+            </div>
+        </nav>
+    </header>
 
-        <!-- Header -->
-        <header class="max-w-7xl w-100 border-b-solid border-b-2 border-purple-600 m-auto mt-5 pb-3">
-            <nav class="flex flex-row justify-between">
-                <div class="first-section">
-                    <a class="font-mono font-semibold tracking-widest uppercase" href="/" rel="noopener noreferrer">FixSlug 💻</a>
-                </div>
-                <div class="second-section flex flex-row gap-5">
-                    <a class="font-normal hover:transition-all hover:font-medium hover:text-purple-600"
-                        href="https://github.com/pelayotrives" rel="noopener noreferrer" target="_blank">More Projects</a>
-                    <a class="font-normal hover:transition-all hover:font-medium hover:text-purple-600"
-                        href="https://pelayotrives.netlify.app/" target="_blank" rel="noopener noreferrer">About Me</a>
-                </div>
-            </nav>
-        </header>
-
+    <!-- Content -->
+    <article class="max-w-7xl m-auto font-poppins p-5 py-8">
         <!-- Description -->
-        <section class="my-10">
-            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" class="text-center max-w-4xl m-auto flex flex-col gap-5">
-                <h1 class="text-4xl font-mono text-black">Slug is <span
+        <section class="mb-10">
+            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="text-center max-w-4xl m-auto flex flex-col gap-5">
+                <h1 class="text-4xl font-mono text-black dark:text-white">Slug is <span
                         class="text-purple-600 font-semibold">love</span>. Slug is <span
                         class="text-purple-600 font-semibold">life</span>.</h1>
-                <p><span class="font-bold">FixSlug</span> is an online utility that
+                <p class="text-black dark:text-white"><span class="font-bold ">FixSlug</span> is an online utility that
                     transforms any given sentence into a
                     clean, SEO-friendly slug.
                     Simply insert a sentence, and voilà – receive an optimized URL component.</p>
@@ -49,25 +51,25 @@
         <section class="flex flex-col gap-10">
 
             <!-- Input section -->
-            <section class="bg-gray-100 flex flex-col gap-5 px-5 py-8 rounded-lg shadow-md">
-                <label class="text-center" for="input_text">
+            <section class="bg-gray-100 dark:bg-gray-700 flex flex-col gap-5 px-5 py-8 rounded-lg shadow-md">
+                <label class="text-center text-black dark:text-white" for="input_text">
                     <span class="font-semibold">Your string</span> (It can be any kind of sentence, title, quote...)
                 </label>
                 <input type="text" id="input_text"
-                    class="rounded-md border-solid border-2 border-gray-300 p-2 focus:outline-purple-600 min-h-[2.75rem] h-auto" autofocus
-                    value="">
+                    class="rounded-md border-solid border-2 border-gray-300 p-2 focus:outline-purple-600 min-h-[2.75rem] h-auto"
+                    autofocus value="">
                 <div class="w-full flex phone:flex-row phone:gap-5 flex-col gap-3">
                     <button id="create_button" onclick="createContent()"
-                        class="uppercase text-sm font-semibold tracking-wider rounded-md outline-none text-white bg-purple-600 hover:hover:transition-all hover:bg-purple-400 active:transition-all active:bg-purple-800 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-purple-300 p-2 w-full h-10">Create</button>
+                        class="uppercase text-sm font-semibold tracking-wider rounded-md outline-none text-white bg-purple-600 hover:hover:transition-all hover:bg-purple-400 active:transition-all active:bg-purple-800 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-purple-300 p-2 w-full h-10"><i class="fa-solid fa-plus fa-sm" style="color: #ffffff;"></i> Create</button>
                     <button id="clear_button" onclick="clearContent()"
-                        class="uppercase text-sm font-semibold tracking-wider rounded-md outline-none text-white bg-purple-600 hover:hover:transition-all hover:bg-purple-400 active:transition-all active:bg-purple-800 disabled:bg-gray-300 disabled:cursor-not-allowed disabled:text-white disabled:border-none focus:outline-purple-300 p-2 w-full h-10">Clear</button>
+                        class="uppercase text-sm font-semibold tracking-wider rounded-md outline-none text-white bg-purple-600 hover:hover:transition-all hover:bg-purple-400 active:transition-all active:bg-purple-800 disabled:bg-gray-300 disabled:cursor-not-allowed disabled:text-white disabled:border-none focus:outline-purple-300 p-2 w-full h-10"><i class="fa-solid fa-broom fa-sm" style="color: #ffffff;"></i> Clear</button>
                 </div>
             </section>
 
             <!-- Output section -->
-            <section class="bg-gray-100 flex flex-col gap-5 px-5 py-8 rounded-lg shadow-md mb-10">
-                <p class="text-center">
-                    <span class="font-semibold">Your output</span> (full optimized slug)
+            <section class="bg-gray-100 dark:bg-gray-700 flex flex-col gap-5 px-5 py-8 rounded-lg shadow-md">
+                <p class="text-center text-black dark:text-white">
+                    <span class="font-semibold ">Your output</span> (full optimized slug)
                 </p>
                 <div class="rounded-md border-solid border-2 border-gray-300 p-2 bg-white min-h-[2.75rem] h-auto">
                     <p class="select-all" id="output_text"></p>
@@ -82,7 +84,7 @@
     </article>
 
     <!-- Footer -->
-    <footer class="w-screen bg-gray-800 text-white font-poppins">
+    <footer class="w-screen bg-gray-800 dark:bg-gray-950 text-white font-poppins">
         <nav class="max-w-7xl m-auto px-5 py-7 flex flex-row justify-between">
             <p>Copyright © - 2023</p>
             <div class="flex flex-row gap-3">
